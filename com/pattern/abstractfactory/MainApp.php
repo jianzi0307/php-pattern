@@ -1,8 +1,6 @@
 <?php
 /**
- * User: jian0307@icloud.com
- * Date: 2017/3/24
- * Time: 11:50
+ * 抽象工厂模式
  */
 require ('../loader/autoload.php');
 
