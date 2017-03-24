@@ -15,6 +15,8 @@ class LifeFactoryImpl implements ILifeFactory
     function __construct()
     {
         $this->dayLife = new DayLife();
+        $this->dayLife->setWakeup('7:00');
+        $this->dayLife->printMessage();
     }
 
     public function getNewInstance(): DayLife
