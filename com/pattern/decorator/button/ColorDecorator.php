@@ -10,14 +10,13 @@ namespace com\pattern\decorator\button;
 
 use com\pattern\decorator\base\Component;
 
-class ColorDecorator extends Component
+class ColorDecorator extends Decorator
 {
-    private $component;
-    private $color;
+    protected $color;
 
     function __construct(Component $component)
     {
-        $this->component = $component;
+        parent::__construct($component);
     }
 
     /**
@@ -36,8 +35,20 @@ class ColorDecorator extends Component
         $this->color = $color;
     }
 
+    public function beforeOperation()
+    {
+        print $this->getColor();
+    }
+
+    public function afterOperation()
+    {
+        print PHP_EOL;
+    }
+
     public function operation()
     {
-        print $this->getColor() . $this->component->operation() ;
+        $this->beforeOperation();
+        parent::operation();
+        $this->afterOperation();
     }
 }

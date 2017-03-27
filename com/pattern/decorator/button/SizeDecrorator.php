@@ -10,14 +10,13 @@ namespace com\pattern\decorator\button;
 
 use com\pattern\decorator\base\Component;
 
-class SizeDecrorator extends Component
+class SizeDecrorator extends Decorator
 {
-    protected $component;
     protected $size;
 
     function __construct(Component $component)
     {
-        $this->component = $component;
+        parent::__construct($component);
     }
 
     /**
@@ -26,6 +25,16 @@ class SizeDecrorator extends Component
     public function setSize($size)
     {
         $this->size = $size;
+    }
+
+    public function beforeOperation()
+    {
+        print $this->getSize();
+    }
+
+    public function afterOperation()
+    {
+        print PHP_EOL;
     }
 
     /**
@@ -38,6 +47,8 @@ class SizeDecrorator extends Component
 
     public function operation()
     {
-        print $this->getSize() . $this->component->operation();
+        $this->beforeOperation();
+        parent::operation();
+        $this->afterOperation();
     }
 }
