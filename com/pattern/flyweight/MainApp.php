@@ -1,5 +1,5 @@
 <?php
-require ('../loader/autoload.php');
+require('../loader/autoload.php');
 /**
  * 享元模式
  */
@@ -20,6 +20,6 @@ for ($i = 0; $i < 20; $i++) {
             break;
     }
     if ($chessman) {
-        $chessman->show();
+        $chessman->setLocation($i, random_int(10, 200));
     }
 }

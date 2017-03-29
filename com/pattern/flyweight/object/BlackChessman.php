@@ -7,7 +7,10 @@
 
 namespace com\pattern\flyweight\object;
 
-
+/**
+ * 黑棋
+ * @package com\pattern\flyweight\object
+ */
 class BlackChessman extends AbstractChessman
 {
     function __construct()
