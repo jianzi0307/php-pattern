@@ -10,7 +10,7 @@ $chessman = null;
 
 //生成20个棋子
 for ($i = 0; $i < 20; $i++) {
-    $random = rand(0,1);
+    $random = random_int(0, 1);
     switch ($random) {
         case 0:
             $chessman = $fiveChessmanFactory->getChess('B');
