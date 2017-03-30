@@ -15,8 +15,8 @@ for ($i = 0; $i < 3; $i++) {
     if (0 == $student->getState()) {
         $squadLeaderHandler->handleRequest($student);
     } else {
+        print '请求上级批复' . PHP_EOL;
         if (1 == $student->getState()) {
-            print '请求上级批复' . PHP_EOL;
             $teacherHandler->handleRequest($student);
         } else {
             print '请求上级批复' . PHP_EOL;
