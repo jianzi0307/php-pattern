@@ -2,7 +2,7 @@
 /**
  * 建造者模式
  */
-require('../loader/autoload.php');
+require('../../loader/autoload.php');
 
 function printMessage(\com\pattern\builder\model\MobilePackage $mobilePackage): void
 {

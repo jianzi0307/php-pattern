@@ -2,7 +2,7 @@
 /**
  * 组合模式
  */
-require('../loader/autoload.php');
+require('../../loader/autoload.php');
 
 $boss = new \com\pattern\composite\sub\Manager(1, '大老板', 100000);
 

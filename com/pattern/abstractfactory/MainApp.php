@@ -2,7 +2,7 @@
 /**
  * 抽象工厂模式
  */
-require ('../loader/autoload.php');
+require ('../../loader/autoload.php');
 
 $kfc = new \com\pattern\abstractfactory\model\kfc\ChinaKfcFactory();
 $customer = new \com\pattern\abstractfactory\custom\Customer($kfc);

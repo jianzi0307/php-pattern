@@ -5,8 +5,10 @@
  * Time: 9:44
  */
 
-require('../loader/autoload.php');
-
+require('../../loader/autoload.php');
+/**
+ * 单例模式
+ */
 $ins = \com\pattern\singleton\Singleton::getInstance();
 $ins->doSomeThing();
 

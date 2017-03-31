@@ -5,7 +5,7 @@
  * Time: 12:43
  */
 
-require('../loader/autoload.php');
+require('../../loader/autoload.php');
 /**
  * 备忘录模式
  */

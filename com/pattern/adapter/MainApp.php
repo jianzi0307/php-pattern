@@ -1,5 +1,8 @@
 <?php
-require ('../loader/autoload.php');
+require ('../../loader/autoload.php');
+/**
+ * 适配器模式
+ */
 //例如： 电脑需要一个12伏特的电源，但是现在只有220伏特的电源
 //所以需要一个输出12伏特的适配器
 $power220 = new \com\pattern\adapter\model\power\Power220();

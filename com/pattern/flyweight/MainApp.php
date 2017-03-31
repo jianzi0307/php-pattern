@@ -1,5 +1,5 @@
 <?php
-require('../loader/autoload.php');
+require('../../loader/autoload.php');
 /**
  * 享元模式
  */

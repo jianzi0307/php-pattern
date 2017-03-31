@@ -5,7 +5,7 @@
  * Time: 9:40
  */
 
-require('../loader/autoload.php');
+require('../../loader/autoload.php');
 
 /*
  不用facade模式的做法：

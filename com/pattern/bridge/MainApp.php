@@ -2,7 +2,7 @@
 /**
  * 桥接模式
  */
-require('../loader/autoload.php');
+require('../../loader/autoload.php');
 
 //白炽灯
 $light1 = new \com\pattern\bridge\lights\impl\IncanLight();

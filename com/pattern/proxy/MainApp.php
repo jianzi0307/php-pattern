@@ -5,7 +5,7 @@
  * Time: 9:59
  */
 
-require ('../loader/autoload.php');
+require ('../../loader/autoload.php');
 
 /**
  * 代理模式

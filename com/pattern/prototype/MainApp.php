@@ -1,6 +1,8 @@
 <?php
-require('../loader/autoload.php');
-
+require('../../loader/autoload.php');
+/**
+ * 原型模式
+ */
 $dayLifeFactory = new \com\pattern\prototype\LifeFactoryImpl();
 
 $day1 = $dayLifeFactory->getNewInstance();

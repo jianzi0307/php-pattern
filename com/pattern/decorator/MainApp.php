@@ -1,5 +1,5 @@
 <?php
-require('../loader/autoload.php');
+require('../../loader/autoload.php');
 
 /**
  * 装饰器模式

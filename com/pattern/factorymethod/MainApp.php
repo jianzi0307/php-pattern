@@ -2,7 +2,7 @@
 /**
  * 工厂方法模式
  */
-require_once('../loader/autoload.php');
+require_once('../../loader/autoload.php');
 
 use \com\pattern\factorymethod\CaoCao2;
 
