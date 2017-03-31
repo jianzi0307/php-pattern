@@ -14,18 +14,17 @@ namespace com\pattern\algorithm\string\time33;
  */
 class Time33
 {
-    public function time33(string $str)
+    public function time33($str)
     {
         $hash = 0;
-        $len = strlen($str);
+        $s = md5($str);
+        $len = strlen($s);
         for ($i = 0; $i < $len; $i++) {
-            $hash = $hash * 33 + ord($str{$i});
+            $hash = (($hash << 5) + $hash) + ord($s{$i});
         }
-        return $hash;
+        return $hash & 0x7FFFFFFF;
     }
 }
 
 $time33 = new Time33();
-print $time33->time33('asaf') . PHP_EOL;
-print $time33->time33('asadf') . PHP_EOL;
-print $time33->time33('asdf') . PHP_EOL;
+print 'time33: ' . $time33->time33('iasodfjasjfd') . PHP_EOL;
