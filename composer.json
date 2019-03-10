@@ -1,0 +1,17 @@
+{
+  "name": "jianzi0307/php-pattern",
+  "description": "php pattern",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jian Jiang",
+      "email": "jian0307@icloud.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "src\\": "src"
+    }
+  },
+  "require": {}
+}
