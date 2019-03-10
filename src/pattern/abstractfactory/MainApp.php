@@ -3,7 +3,7 @@
  * 抽象工厂模式
  */
 
-namespace src\pattern\abstractfactory;
+require_once '../../../vendor/autoload.php';
 
 use src\pattern\abstractfactory\model\kfc\ChinaKfcFactory;
 use src\pattern\abstractfactory\custom\Customer;

@@ -1,6 +1,6 @@
 <?php
 
-namespace src\src\pattern\adapter;
+require_once '../../../vendor/autoload.php';
 
 use src\pattern\adapter\model\power\AdapterPower12;
 use src\pattern\adapter\model\power\AdapterPowerEx12;

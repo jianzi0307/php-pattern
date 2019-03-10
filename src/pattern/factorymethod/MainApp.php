@@ -1,6 +1,7 @@
 <?php
+require_once '../../../vendor/autoload.php';
 
-namespace src\pattern\factorymethod;
+use src\pattern\factorymethod\CaoCao2;
 
 /**
  * 工厂方法模式

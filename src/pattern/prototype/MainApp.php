@@ -1,6 +1,8 @@
 <?php
 
-namespace src\pattern\prototype;
+require_once '../../../vendor/autoload.php';
+
+use src\pattern\prototype\LifeFactoryImpl;
 
 /**
  * 原型模式

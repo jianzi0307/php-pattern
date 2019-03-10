@@ -5,7 +5,7 @@
  * Time: 12:43
  */
 
-namespace src\pattern\memento;
+require_once '../../../vendor/autoload.php';
 
 use src\pattern\memento\caretaker\CareTaker;
 use src\pattern\memento\originator\Hero;

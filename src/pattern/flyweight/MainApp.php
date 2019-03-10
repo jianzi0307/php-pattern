@@ -1,6 +1,6 @@
 <?php
 
-namespace src\pattern\flyweight;
+require_once '../../../vendor/autoload.php';
 
 use src\pattern\flyweight\factory\FiveChessmanFactory;
 

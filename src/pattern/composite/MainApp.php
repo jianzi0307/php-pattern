@@ -1,6 +1,5 @@
 <?php
-
-namespace src\pattern\composite;
+require_once '../../../vendor/autoload.php';
 
 use src\pattern\composite\sub\Employees;
 use src\pattern\composite\sub\Manager;

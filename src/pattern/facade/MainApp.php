@@ -5,7 +5,9 @@
  * Time: 9:40
  */
 
-namespace src\pattern\facade;
+require_once '../../../vendor/autoload.php';
+
+use src\pattern\facade\CookFacade;
 
 /*
  不用facade模式的做法：

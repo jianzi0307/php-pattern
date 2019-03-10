@@ -1,6 +1,6 @@
 <?php
 
-namespace src\pattern\chainofresponsibility;
+require_once '../../../vendor/autoload.php';
 
 use src\pattern\chainofresponsibility\impl\SchoolMasterHandler;
 use src\pattern\chainofresponsibility\impl\SquadLeaderHandler;

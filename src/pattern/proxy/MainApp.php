@@ -1,13 +1,9 @@
 <?php
 
-namespace src\pattern\proxy;
+require_once '../../../vendor/autoload.php';
 
-/**
- * User: jian0307@icloud.com
- * Date: 2017/3/30
- * Time: 9:59
- */
-
+use src\pattern\proxy\RedWineFactory;
+use src\pattern\proxy\RedWineProxy;
 
 /**
  * 代理模式

@@ -5,7 +5,9 @@
  * Time: 9:44
  */
 
-namespace src\pattern\singleton;
+require_once '../../../vendor/autoload.php';
+
+use src\pattern\singleton\Singleton;
 
 /**
  * 单例模式

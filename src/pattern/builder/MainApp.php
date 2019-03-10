@@ -1,6 +1,6 @@
 <?php
 
-namespace src\pattern\builder;
+require_once '../../../vendor/autoload.php';
 
 use src\pattern\builder\director\MobileDirector;
 use src\pattern\builder\itf\MobileBuilderImpl1;

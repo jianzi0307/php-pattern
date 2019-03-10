@@ -1,6 +1,6 @@
 <?php
 
-namespace src\pattern\decorator;
+require_once '../../../vendor/autoload.php';
 
 use src\pattern\decorator\button\Button;
 use src\pattern\decorator\button\ColorDecorator;

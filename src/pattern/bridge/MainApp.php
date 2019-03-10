@@ -1,6 +1,6 @@
 <?php
 
-namespace src\pattern\bridge;
+require_once '../../../vendor/autoload.php';
 
 /**
  * 桥接模式
