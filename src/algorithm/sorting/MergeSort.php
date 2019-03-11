@@ -59,13 +59,21 @@ class MergeSort
                 $sorted[] = array_shift($a);
             }
         }
-        // 比较到最后，两个堆栈总会有一个栈剩余一个元素，这里判断如果堆栈非空，则出栈
-        if (count($a) > 0) {
+        // 如果堆栈非空,将剩余的元素出栈
+        while (count($a)) {
             $sorted[] = array_shift($a);
         }
-        if (count($b) > 0) {
+        while (count($b)) {
             $sorted[] = array_shift($b);
         }
+
+        // 或：
+//        if (count($a)) {
+//            $sorted = array_merge($sorted, $a);
+//        }
+//        if (count($b)) {
+//            $sorted = array_merge($sorted, $b);
+//        }
         return $sorted;
     }
 }
