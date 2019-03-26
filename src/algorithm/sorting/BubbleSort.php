@@ -15,6 +15,8 @@ namespace src\algorithm\sorting;
  */
 class BubbleSort
 {
+    use UtilTrait;
+
     /**
      * 排序
      * @param array $arr
@@ -31,17 +33,5 @@ class BubbleSort
             }
         }
         return $arr;
-    }
-
-    /**
-     * 交换
-     * @param $a
-     * @param $b
-     */
-    protected static function _swap(&$a, &$b)
-    {
-        $a ^= $b;
-        $b ^= $a;
-        $a ^= $b;
     }
 }

@@ -9,8 +9,10 @@
 namespace src\algorithm\sorting;
 
 
-class InsertionSort extends BubbleSort
+class InsertionSort
 {
+    use UtilTrait;
+
     public static function sort($arr)
     {
         $size = count($arr);
